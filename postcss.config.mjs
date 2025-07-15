@@ -3,7 +3,7 @@ const config = {
   theme: {
     extend: {
       colors: {
-        primary: '#003049', // أزرق غامق
+        // primary: '#003049', // أزرق غامق
         // secondary: '#facc15', // أصفر
         // danger: '#dc2626', // أحمر
         // brand: {

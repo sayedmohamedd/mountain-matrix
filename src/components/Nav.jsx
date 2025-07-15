@@ -66,10 +66,11 @@ const Nav = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <button className="px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
+          <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
             <a
               href="https://calendly.com/mountainssolutions/30min"
               target="_blank"
+              className="w-full h-full"
             >
               Book appointment
             </a>
