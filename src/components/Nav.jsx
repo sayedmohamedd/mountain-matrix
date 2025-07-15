@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
+// Icons
+import { FaListUl } from 'react-icons/fa';
+
 const Nav = () => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -22,17 +25,23 @@ const Nav = () => {
 
   return (
     <nav
-      className={`h-22 top-0 fixed w-full bg-[#eaeaee] duration-150 ease-in ${
+      className={`h-22 top-0 fixed w-full bg-[#eaeaee] duration-150 ease-in z-20 ${
         scrolled ? 'translate-y-[-100px]' : ''
       }`}
     >
       <div className={`container flex items-center justify-between h-full`}>
-        <img src="./nav-logo.png" alt="mountain-matrix" className="w-48" />
+        <Link href="/" className="focus:outline-none">
+          <img
+            src="./nav-logo.png"
+            alt="mountain-matrix"
+            className="w-36 md:w-40 lg:w-48"
+          />
+        </Link>
         <div className="hidden lg:flex gap-8 items-center">
-          <ul className="flex gap-8 text-lg font-semibold text-[#003049] focus:outline-none">
+          <ul className="flex gap-10 text-lg font-semibold text-[#003049] focus:outline-none">
             <li
               className={`${
-                pathname === '/' ? 'border-b-2 border-blue-600' : ''
+                pathname === '/' ? 'text-gray-500 border-blue-600' : ''
               }`}
             >
               <Link href="/" className={`hover:opacity-80`}>
@@ -44,8 +53,10 @@ const Nav = () => {
               <Link
                 href="/services"
                 className={`${
-                  pathname === '/services' ? 'border-b-2 border-blue-600' : ''
-                } cursor-pointer`}
+                  pathname === '/services'
+                    ? 'text-gray-500 border-blue-600'
+                    : ''
+                } cursor-pointer hover:opacity-85 duration-75`}
               >
                 Services
               </Link>
@@ -55,15 +66,20 @@ const Nav = () => {
               <Link
                 href="/about"
                 className={`${
-                  pathname === '/about' ? 'border-b-2 border-blue-600' : ''
-                } cursor-pointer`}
+                  pathname === '/about' ? 'text-gray-500 border-blue-600' : ''
+                } cursor-pointer hover:opacity-85 duration-75`}
               >
                 About
               </Link>
             </li>
             <li>|</li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="hover:opacity-85 duration-75 cursor-pointer"
+              >
+                Contact
+              </a>
             </li>
           </ul>
           <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
@@ -76,6 +92,7 @@ const Nav = () => {
             </a>
           </button>
         </div>
+        <FaListUl className="text-[#003049] text-3xl lg:hidden cursor-pointer hover:opacity-80 duration-100" />
       </div>
     </nav>
   );
