@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 const Header = () => {
   return (
     <header
-      className={`min-h-[100vh] py-20 bg-fixed bg-center bg-cover`}
+      className={`h-[80vh] py-20 bg-fixed bg-center bg-cover`}
       style={{ backgroundImage: "url('/header.jpg')" }}
     >
       <div className="container flex flex-col justify-center">
@@ -13,11 +15,14 @@ const Header = () => {
           Growth
         </p>
         <div className="flex gap-5 my-5">
-          <button className="px-5 py-3 rounded-full text-black bg-white">
+          <Link
+            href="/about"
+            className="px-5 py-3 rounded-full text-black bg-white"
+          >
             More About Our Services
-          </button>
+          </Link>
           <button className="px-5 py-3 rounded-full text-black bg-white">
-            Get Your Free Consultation!
+            <a>Get Your Free Consultation!</a>
           </button>
         </div>
         <p className="my-3 text-white text-lg">

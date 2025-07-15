@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 // Icons
 import { FaListUl } from 'react-icons/fa';
+// import DropDownList from './DropDownList';
 
 const Nav = () => {
   const pathname = usePathname();
@@ -24,77 +25,80 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav
-      className={`h-22 top-0 fixed w-full bg-[#eaeaee] duration-150 ease-in z-20 ${
-        scrolled ? 'translate-y-[-100px]' : ''
-      }`}
-    >
-      <div className={`container flex items-center justify-between h-full`}>
-        <Link href="/" className="focus:outline-none">
-          <img
-            src="./nav-logo.png"
-            alt="mountain-matrix"
-            className="w-36 md:w-40 lg:w-48"
-          />
-        </Link>
-        <div className="hidden lg:flex gap-8 items-center">
-          <ul className="flex gap-10 text-lg font-semibold text-[#003049] focus:outline-none">
-            <li
-              className={`${
-                pathname === '/' ? 'text-gray-500 border-blue-600' : ''
-              }`}
-            >
-              <Link href="/" className={`hover:opacity-80`}>
-                Home
-              </Link>
-            </li>
-            <li>|</li>
-            <li>
-              <Link
-                href="/services"
+    <>
+      <nav
+        className={`h-22 top-0 fixed w-full bg-[#eaeaee] duration-150 ease-in z-20 ${
+          scrolled ? 'translate-y-[-100px]' : ''
+        }`}
+      >
+        <div className={`container flex items-center justify-between h-full`}>
+          <Link href="/" className="focus:outline-none">
+            <img
+              src="./nav-logo.png"
+              alt="mountain-matrix"
+              className="w-36 md:w-40 lg:w-48"
+            />
+          </Link>
+          <div className="hidden lg:flex gap-8 items-center">
+            <ul className="flex gap-10 text-lg font-semibold text-[#003049] focus:outline-none">
+              <li
                 className={`${
-                  pathname === '/services'
-                    ? 'text-gray-500 border-blue-600'
-                    : ''
-                } cursor-pointer hover:opacity-85 duration-75`}
+                  pathname === '/' ? 'text-gray-500 border-blue-600' : ''
+                }`}
               >
-                Services
-              </Link>
-            </li>
-            <li>|</li>
-            <li>
-              <Link
-                href="/about"
-                className={`${
-                  pathname === '/about' ? 'text-gray-500 border-blue-600' : ''
-                } cursor-pointer hover:opacity-85 duration-75`}
-              >
-                About
-              </Link>
-            </li>
-            <li>|</li>
-            <li>
+                <Link href="/" className={`hover:opacity-80`}>
+                  Home
+                </Link>
+              </li>
+              <li>|</li>
+              <li>
+                <Link
+                  href="/services"
+                  className={`${
+                    pathname === '/services'
+                      ? 'text-gray-500 border-blue-600'
+                      : ''
+                  } cursor-pointer hover:opacity-85 duration-75`}
+                >
+                  Services
+                </Link>
+              </li>
+              <li>|</li>
+              <li>
+                <Link
+                  href="/about"
+                  className={`${
+                    pathname === '/about' ? 'text-gray-500 border-blue-600' : ''
+                  } cursor-pointer hover:opacity-85 duration-75`}
+                >
+                  About
+                </Link>
+              </li>
+              <li>|</li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:opacity-85 duration-75 cursor-pointer"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
               <a
-                href="#contact"
-                className="hover:opacity-85 duration-75 cursor-pointer"
+                href="https://calendly.com/mountainssolutions/30min"
+                target="_blank"
+                className="w-full h-full"
               >
-                Contact
+                Book appointment
               </a>
-            </li>
-          </ul>
-          <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
-            <a
-              href="https://calendly.com/mountainssolutions/30min"
-              target="_blank"
-              className="w-full h-full"
-            >
-              Book appointment
-            </a>
-          </button>
+            </button>
+          </div>
+          <FaListUl className="text-[#003049] text-3xl lg:hidden cursor-pointer hover:opacity-80 duration-100" />
         </div>
-        <FaListUl className="text-[#003049] text-3xl lg:hidden cursor-pointer hover:opacity-80 duration-100" />
-      </div>
-    </nav>
+      </nav>
+      {/* <DropDownList /> */}
+    </>
   );
 };
 
