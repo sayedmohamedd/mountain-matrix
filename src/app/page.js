@@ -1,58 +1,19 @@
+import FeaturesSection from '@/components/FeaturesSection';
 import Header from '@/components/Header';
+import InsightsSection from '@/components/InsightsSection';
 import ReviewSlider from '@/components/ReviewSlider';
 
 export default function Home() {
   return (
     <>
       <Header />
+      <FeaturesSection />
+      <ReviewSlider />
 
-      {/* Resume */}
-      <section className="bg-[#eaeaee]">
-        <div className="container rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 py-18">
-          <div>
-            <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
-              We don’t just generate leads, we help you close more deals
-            </h2>
-            <ul className="flex flex-col gap-5 mb-5 pl-3  list-disc list-inside text-gray-600">
-              <li>Proven track record with industry-leading results</li>
-              <li>
-                Tailored strategies for roofing, construction, home improvement
-                & more
-              </li>
-              <li>
-                Flexible & cost-effective solutions for every business size
-              </li>
-              <li>Dedicated support & account management</li>
-              <li>Guaranteed lead quality & appointment scheduling</li>
-            </ul>
-            <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
-              <a
-                href="https://calendly.com/mountainssolutions/30min"
-                target="_blank"
-                className="w-full h-full"
-              >
-                Book appointment
-              </a>
-            </button>
-          </div>
-          <div className="p-10">
-            <img src="./who-we-are.svg" alt="who-we-are" loading="lazy" />
-          </div>
-        </div>
-      </section>
-
-      {/* Reviews */}
-      <section>
-        <div className="container p-10">
-          <h2 className="text-center text-3xl font-extrabold text-[#003049] my-10">
-            Client Testimonials and Reviews
-          </h2>
-          <ReviewSlider />
-        </div>
-      </section>
+      <InsightsSection />
 
       {/* Industry Insights */}
-      <section className="bg-[#eaeaee]">
+      {/* <section className="bg-[#eaeaee]">
         <div className="container p-10">
           <h2 className="text-center text-3xl font-extrabold text-[#003049] my-10">
             Roofing and Solar Industry Insights
@@ -132,7 +93,42 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
+
+// {/* Resume */}
+// <section className="bg-[#eaeaee]">
+//   <div className="container rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 py-18">
+//     <div>
+//       <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
+//         We don’t just generate leads, we help you close more deals
+//       </h2>
+//       <ul className="flex flex-col gap-5 mb-5 pl-3  list-disc list-inside text-gray-600">
+//         <li>Proven track record with industry-leading results</li>
+//         <li>
+//           Tailored strategies for roofing, construction, home improvement
+//           & more
+//         </li>
+//         <li>
+//           Flexible & cost-effective solutions for every business size
+//         </li>
+//         <li>Dedicated support & account management</li>
+//         <li>Guaranteed lead quality & appointment scheduling</li>
+//       </ul>
+//       <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
+//         <a
+//           href="https://calendly.com/mountainssolutions/30min"
+//           target="_blank"
+//           className="w-full h-full"
+//         >
+//           Book appointment
+//         </a>
+//       </button>
+//     </div>
+//     <div className="p-10">
+//       <img src="./who-we-are.svg" alt="who-we-are" loading="lazy" />
+//     </div>
+//   </div>
+// </section>

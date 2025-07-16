@@ -51,16 +51,25 @@ const Footer = () => {
               Follow Us
             </span>
             <li className="flex justify-center items-center gap-7">
-              <a href="" target="_blank">
+              <a
+                href="https://www.facebook.com/mountainssolutions/"
+                target="_blank"
+              >
                 <FaFacebookF />
               </a>
-              <a href="" target="_blank">
+              <a
+                href="https://www.instagram.com/mountianssolutions/"
+                target="_blank"
+              >
                 <FaInstagram />
               </a>
-              <a href="" target="_blank">
+              <a href="https://x.com/MountainsSolns" target="_blank">
                 <FaXTwitter />
               </a>
-              <a href="" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/mountainssolutions/"
+                target="_blank"
+              >
                 <FaLinkedinIn />
               </a>
             </li>
