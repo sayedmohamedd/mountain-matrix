@@ -1,3 +1,5 @@
+import StepsSection from '@/components/StepSection';
+
 const page = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const page = () => {
             Boost Sales, Drive Conversions & Improve Customer Retention
           </p>
           {/* three services */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20 md:p-10 bg-gray-100 rounded-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20 md:p-10 md:bg-gray-100 rounded-xl">
             <div className="flex flex-col bg-white hover:scale-105 duration-150 shadow-md p-8 rounded-3xl">
               <div className="w-3/4 mx-auto mb-3">
                 <img
@@ -169,6 +171,7 @@ const page = () => {
             designed to help you identify, target, and convert qualified
             prospects into paying customers.
           </p>
+          <StepsSection />
         </div>
       </section>
     </>

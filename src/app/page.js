@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import ReviewSlider from '@/components/ReviewSlider';
 
 export default function Home() {
   return (
@@ -6,9 +7,9 @@ export default function Home() {
       <Header />
 
       {/* Resume */}
-      <section>
-        <div className="container shadow-md rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 py-18">
-          <div className="">
+      <section className="bg-[#eaeaee]">
+        <div className="container rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 py-18">
+          <div>
             <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
               We don’t just generate leads, we help you close more deals
             </h2>
@@ -43,8 +44,10 @@ export default function Home() {
       {/* Reviews */}
       <section>
         <div className="container p-10">
-          <h2>Client Testimonials and Reviews</h2>
-          <div></div>
+          <h2 className="text-center text-3xl font-extrabold text-[#003049] my-10">
+            Client Testimonials and Reviews
+          </h2>
+          <ReviewSlider />
         </div>
       </section>
 
@@ -132,37 +135,4 @@ export default function Home() {
       </section>
     </>
   );
-}
-
-{
-  /* About us */
-}
-{
-  /* <section className="container">
-        <div className="container">
-          <div>
-            <h2>We don’t just generate leads, we help you close more deals</h2>
-            <ul>
-              <li>Proven track record with industry-leading results</li>
-              <li>
-                Tailored strategies for roofing, construction, home improvement
-                & more
-              </li>
-              <li>
-                Flexible & cost-effective solutions for every business size
-              </li>
-              <li>Dedicated support & account management</li>
-              <li>Guaranteed lead quality & appointment scheduling</li>
-            </ul>
-            <button>
-              <a
-                href="https://calendly.com/mountainssolutions/30min"
-                target="_blank"
-              >
-                Get Your Free Quote!
-              </a>
-            </button>
-          </div>
-        </div>
-      </section> */
 }
