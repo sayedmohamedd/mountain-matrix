@@ -53,9 +53,9 @@ const Nav = () => {
               <li>|</li>
               <li>
                 <Link
-                  href="/services"
+                  href="/services-of-mountains-matrix"
                   className={`${
-                    pathname === '/services'
+                    pathname === '/services-of-mountains-matrix'
                       ? 'text-gray-500 border-blue-600'
                       : ''
                   } cursor-pointer hover:opacity-85 duration-75`}
@@ -66,9 +66,11 @@ const Nav = () => {
               <li>|</li>
               <li>
                 <Link
-                  href="/about"
+                  href="/about-mountains-matrix"
                   className={`${
-                    pathname === '/about' ? 'text-gray-500 border-blue-600' : ''
+                    pathname === '/about-mountains-matrix'
+                      ? 'text-gray-500 border-blue-600'
+                      : ''
                   } cursor-pointer hover:opacity-85 duration-75`}
                 >
                   About

@@ -3,11 +3,12 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header
-      className={`h-[80vh] py-20 bg-fixed bg-center bg-cover`}
+      className={`h-[80vh] relative py-20 bg-fixed bg-center bg-cover`}
       style={{ backgroundImage: "url('/header.jpg')" }}
     >
-      <div className="container flex flex-col justify-center">
-        <h1 className="pt-8 text-6xl font-bold text-white select-none">
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+      <div className="container relative z-10 flex flex-col justify-center items-center py-8">
+        <h1 className="pt-10 text-5xl font-bold text-white select-none">
           Grow Your Business with Qualified Appointments
         </h1>
         <p className="my-5 text-white font-medium text-xl select-none">
@@ -16,16 +17,23 @@ const Header = () => {
         </p>
         <div className="flex gap-5 my-5">
           <Link
-            href="/about"
-            className="px-5 py-3 rounded-full text-black bg-white"
+            href="/about-mountains-matrix"
+            // className="px-5 py-3 rounded-full text-black bg-white"
+            className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white"
           >
             More About Our Services
           </Link>
-          <button className="px-5 py-3 rounded-full text-black bg-white">
-            <a>Get Your Free Consultation!</a>
+          <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer ease-in duration-75 border text-[#003049] hover:bg-[#003049] hover:text-white">
+            <a
+              href="https://calendly.com/mountainssolutions/30min"
+              target="_blank"
+              className="w-full h-full"
+            >
+              Get Your Free Consultation!
+            </a>
           </button>
         </div>
-        <p className="my-3 text-white text-lg">
+        <p className="my-3 text-white text-lg font-semibold leading-9 md:w-4/6">
           Are you struggling to find high-quality leads and scheduled
           appointments for your roofing, home improvement, or construction
           business? At Mountains Solutions, we take the guesswork out of lead

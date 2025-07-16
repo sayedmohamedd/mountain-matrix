@@ -7,7 +7,7 @@ import { CiLocationOn, CiMail } from 'react-icons/ci';
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-[#003049]" id="contact">
+    <footer className="text-white bg-[#0f222e]" id="contact">
       <div className="container p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* First */}
         <div className="flex flex-col gap-5 items-center justify-center">
