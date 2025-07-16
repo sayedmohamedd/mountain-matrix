@@ -60,7 +60,7 @@ const page = () => {
             </p>
           </div>
           <div className="p-10">
-            <img src="./who-we-are.svg" alt="who-we-are" />
+            <img src="./who-we-are.svg" alt="who-we-are" loading="lazy" />
           </div>
         </div>
       </section>

@@ -35,7 +35,7 @@ export default function Home() {
             </button>
           </div>
           <div className="p-10">
-            <img src="./who-we-are.svg" alt="who-we-are" />
+            <img src="./who-we-are.svg" alt="who-we-are" loading="lazy" />
           </div>
         </div>
       </section>
@@ -61,6 +61,7 @@ export default function Home() {
                   className="rounded-md"
                   src="./industry-insights/1.jpg"
                   alt="Reasons to Avoid Manual Lead Generation for Your Roofing Business"
+                  loading="lazy"
                 />
               </div>
               <h3 className="my-5 text-lg font-semibold text-slate-900">
@@ -79,6 +80,7 @@ export default function Home() {
                   className="rounded-md w-full"
                   src="./industry-insights/2.jpg"
                   alt="Reasons to Avoid Manual Lead Generation for Your Roofing Business"
+                  loading="lazy"
                 />
               </div>
               <h3 className="my-5 text-lg font-semibold text-slate-900">
@@ -96,6 +98,7 @@ export default function Home() {
                   className="w-full rounded-md"
                   src="./industry-insights/3.jpg"
                   alt="Reasons to Avoid Manual Lead Generation for Your Roofing Business"
+                  loading="lazy"
                 />
               </div>
               <h3 className="my-5 text-lg font-semibold text-slate-900">
@@ -113,6 +116,7 @@ export default function Home() {
                   className="rounded-md"
                   src="./industry-insights/4.jpg"
                   alt="Reasons to Avoid Manual Lead Generation for Your Roofing Business"
+                  loading="lazy"
                 />
               </div>
               <h3 className="my-5 text-lg font-semibold text-slate-900">

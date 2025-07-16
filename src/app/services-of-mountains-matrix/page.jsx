@@ -34,6 +34,7 @@ const page = () => {
                   src="./services/appointment-setting.png"
                   alt="Appointment Setting"
                   className="object-contain aspect-square"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center text-xl font-bold mb-3 text-[#0f222e]">
@@ -54,6 +55,7 @@ const page = () => {
                   src="./services/lead-generation.png"
                   alt="lead-generation"
                   className="object-contain aspect-square"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center text-xl font-bold mb-3 text-[#0f222e]">
@@ -73,6 +75,7 @@ const page = () => {
                   src="./services/customer-service.png"
                   alt="Customer Service"
                   className="object-contain aspect-square"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center text-xl font-bold mb-3 text-[#0f222e]">
@@ -115,11 +118,11 @@ const page = () => {
               </p>
             </div>
             <div className="hover:scale-95 duration-150 hidden md:block">
-              <img src="./arrow-1.png" alt="arrow" />
+              <img src="./arrow-1.png" alt="arrow" loading="lazy" />
             </div>
             {/* two */}
             <div className="hover:scale-95 duration-150 justify-end hidden md:flex">
-              <img src="./arrow-2.png" alt="arrow" />
+              <img src="./arrow-2.png" alt="arrow" loading="lazy" />
             </div>
             <div className="hover:rotate-z-2 duration-150 shadow-md rounded-md bg-gray-200 p-10">
               <h3 className="text-lg font-bold">2- Personalized Outreach</h3>
@@ -140,7 +143,7 @@ const page = () => {
             <div className="hover:scale-95 duration-150 hidden md:flex"></div>
             {/* four */}
             <div className="hover:scale-95 duration-150 hidden md:flex justify-end">
-              <img src="./arrow-3.png" alt="arrow" />
+              <img src="./arrow-3.png" alt="arrow" loading="lazy" />
             </div>
             <div className="hover:rotate-z-2 duration-150 shadow-md rounded-md bg-gray-200 p-10">
               <h3 className="text-lg font-bold">4 - Comprehensive Reporting</h3>
