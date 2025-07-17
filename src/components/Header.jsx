@@ -111,7 +111,7 @@ const Header = () => {
           className="flex flex-wrap gap-4 justify-center mb-8"
         >
           <Link
-            href="/about-mountains-matrix"
+            href="/about-mountain-matrix"
             className="px-6 py-3 text-lg font-semibold rounded-full border border-white text-white hover:bg-white hover:text-[#003049] transition"
           >
             More About Our Services

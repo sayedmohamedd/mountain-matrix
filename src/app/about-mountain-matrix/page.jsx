@@ -110,12 +110,18 @@ const page = () => {
             </p>
             <div className="flex justify-center items-center">
               <button className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100">
-                Start Growing Today
+                <a
+                  href="https://calendly.com/mountainssolutions/30min"
+                  target="_blank"
+                >
+                  Book appointment
+                </a>
               </button>
             </div>
           </div>
         </div>
       </section>
+
       {/* our values */}
       <section className="bg-[#eaeaee]">
         <div className="container p-10">
@@ -153,7 +159,13 @@ const page = () => {
             </p>
             <div className="flex justify-center items-center">
               <button className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100">
-                Talk to an Expert
+                <a
+                  href="https://calendly.com/mountainssolutions/30min"
+                  target="_blank"
+                >
+                  Book appointment
+                  {/* Talk to an Expert */}
+                </a>
               </button>
             </div>
           </div>

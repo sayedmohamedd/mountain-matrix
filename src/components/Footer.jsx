@@ -8,14 +8,14 @@ import { CiLocationOn, CiMail } from 'react-icons/ci';
 const Footer = () => {
   return (
     <footer className="text-white bg-[#0f222e]" id="contact">
-      <div className="container p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="container px-10 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* First */}
-        <div className="flex flex-col gap-5 items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <img
-            src="./footer-logo.png"
+            src="./white-logo-croped.png"
             alt="mountain-matrix"
             loading="lazy"
-            className="w-52"
+            className="w-30"
           />
           <p className="text-gray-300 leading-relaxed text-center">
             Mountains Solutions is your trusted partner in business growth. We

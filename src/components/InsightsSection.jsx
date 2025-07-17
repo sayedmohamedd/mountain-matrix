@@ -39,7 +39,7 @@ const InsightsSection = () => {
   };
 
   return (
-    <section className="bg-[#eaeaee] py-20 px-6">
+    <section className="bg-[#eaeaee] py-20 px-6 overflow-hidden">
       <div className="container mx-auto">
         <h2 className="text-center text-4xl font-extrabold text-[#003049] mb-16">
           Roofing and Solar Industry Insights
@@ -62,7 +62,6 @@ const InsightsSection = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

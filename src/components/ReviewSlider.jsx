@@ -49,7 +49,7 @@ const fadeUp = {
 
 export default function ReviewSlider() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="container p-10">
         <div className="py-20 px-4 ">
           <h2

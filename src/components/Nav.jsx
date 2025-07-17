@@ -49,7 +49,7 @@ const Nav = () => {
           {/* Desktop Nav */}
           <div className="hidden lg:flex gap-8 items-center">
             <ul className="flex gap-10 text-lg font-semibold text-[#003049] focus:outline-none">
-              <li className={`${pathname === '/' ? 'text-gray-500' : ''}`}>
+              <li className={`${pathname === '/' ? 'opacity-30' : ''}`}>
                 <Link href="/" className="hover:opacity-80">
                   Home
                 </Link>
@@ -57,9 +57,9 @@ const Nav = () => {
               <li>|</li>
               <li>
                 <Link
-                  href="/services-of-mountains-matrix"
+                  href="/services-of-mountain-matrix"
                   className={`${
-                    pathname === '/services-of-mountains-matrix'
+                    pathname === '/services-of-mountain-matrix'
                       ? 'text-gray-500'
                       : ''
                   } hover:opacity-85`}
@@ -70,11 +70,9 @@ const Nav = () => {
               <li>|</li>
               <li>
                 <Link
-                  href="/about-mountains-matrix"
+                  href="/about-mountain-matrix"
                   className={`${
-                    pathname === '/about-mountains-matrix'
-                      ? 'text-gray-500'
-                      : ''
+                    pathname === '/about-mountain-matrix' ? 'text-gray-500' : ''
                   } hover:opacity-85`}
                 >
                   About
@@ -119,8 +117,8 @@ const Nav = () => {
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex justify-between items-center mb-6">
-          <img src="/nav-logo.png" className="w-32" alt="Logo" />
+        <div className="flex justify-between items-center">
+          <img src="/dark-logo.png" className="w-32" alt="Mountain Matrix" />
           <IoClose
             className="text-3xl text-[#003049] cursor-pointer hover:opacity-70"
             onClick={() => setMenuOpen(false)}
@@ -129,22 +127,31 @@ const Nav = () => {
 
         <ul className="flex flex-col gap-5 text-[#003049] font-semibold text-lg">
           <li>
-            <Link href="/" className="hover:text-blue-600 block">
+            <Link
+              href="/"
+              className={`hover:text-blue-600 block ${
+                pathname === '/' ? 'opacity-30' : ''
+              }`}
+            >
               Home
             </Link>
           </li>
           <li>
             <Link
-              href="/services-of-mountains-matrix"
-              className="hover:text-blue-600 block"
+              href="/services-of-mountain-matrix"
+              className={`hover:text-blue-600 block ${
+                pathname === '/services-of-mountain-matrix' ? 'opacity-30' : ''
+              }`}
             >
               Services
             </Link>
           </li>
           <li>
             <Link
-              href="/about-mountains-matrix"
-              className="hover:text-blue-600 block"
+              href="/about-mountain-matrix"
+              className={`hover:text-blue-600 block ${
+                pathname === '/about-mountain-matrix' ? 'opacity-30' : ''
+              }`}
             >
               About
             </Link>
