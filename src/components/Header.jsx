@@ -73,7 +73,7 @@ const Header = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 drop-shadow-md"
+          className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 drop-shadow-md mt-5"
         >
           Grow Your Business with
           <br />
@@ -100,7 +100,7 @@ const Header = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-white text-lg sm:text-xl font-medium max-w-2xl mb-6 drop-shadow"
         >
-          Mountains Solutions: Your Trusted Partner in Lead Generation & Sales
+          Mountain Matrix: Your Trusted Partner in Lead Generation & Sales
           Growth
         </motion.p>
 
@@ -133,7 +133,7 @@ const Header = () => {
         >
           Are you struggling to find high-quality leads and scheduled
           appointments for your roofing, home improvement, or construction
-          business? At Mountains Solutions, we take the guesswork out of lead
+          business? At Mountain Matrix, we take the guesswork out of lead
           generation, connecting you with pre-qualified prospects ready to do
           business.
         </motion.p>

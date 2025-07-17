@@ -37,12 +37,12 @@ const Nav = () => {
           scrolled ? 'translate-y-[-100px]' : ''
         }`}
       >
-        <div className="container flex items-center justify-between h-20 px-4">
+        <div className="container flex items-center justify-between h-24 px-4">
           <Link href="/" className="focus:outline-none">
             <img
-              src="/nav-logo.png"
+              src="/logo-removebg.png"
               alt="mountain-matrix"
-              className="w-36 md:w-40 lg:w-48"
+              className="w-36 md:w-40 lg:w-36"
             />
           </Link>
 

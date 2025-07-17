@@ -11,7 +11,12 @@ const Footer = () => {
       <div className="container p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* First */}
         <div className="flex flex-col gap-5 items-center justify-center">
-          <img src="./footer-logo.png" alt="" loading="lazy" className="w-52" />
+          <img
+            src="./footer-logo.png"
+            alt="mountain-matrix"
+            loading="lazy"
+            className="w-52"
+          />
           <p className="text-gray-300 leading-relaxed text-center">
             Mountains Solutions is your trusted partner in business growth. We
             provide flexible outsourcing services to businesses of all sizes,
@@ -77,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center pb-5 text-gray-300">
-        © 2025 Mountains Solutions. All rights reserved.
+        © 2025 Mountain Matrix. All rights reserved.
       </p>
     </footer>
   );

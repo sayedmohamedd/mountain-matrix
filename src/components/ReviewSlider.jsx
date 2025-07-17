@@ -16,31 +16,24 @@ const reviews = [
     rating: 5,
   },
   {
-    image: '/reviews/texas-based-client.png',
+    image: '/reviews/texas-roofing.png',
     quote:
-      'We went from 2 clients a week to over 15. This service is a game changer!',
-    author: 'New York Construction Firm',
+      "Your responses are really quick, it feels like you guys are working 24/7, that's how quick you are",
+    author: 'Texas-based Roofing Company',
     rating: 4,
   },
   {
-    image: '/reviews/texas-based-client.png',
+    image: '/reviews/california.png',
     quote:
       "Their system brought us leads we never thought we'd reach. Highly recommended!",
-    author: 'LA Solar Company',
+    author: 'California-based Roofing Company',
     rating: 5,
   },
   {
-    image: '/reviews/texas-based-client.png',
+    image: '/reviews/florida.png',
     quote:
-      "Their system brought us leads we never thought we'd reach. Highly recommended!",
-    author: 'LA Solar Company',
-    rating: 5,
-  },
-  {
-    image: '/reviews/texas-based-client.png',
-    quote:
-      "Their system brought us leads we never thought we'd reach. Highly recommended!",
-    author: 'LA Solar Company',
+      "It's been a great return on investment if I'm being honest. it definitely equals it self out. you're not going to get all of them but the ones that do convert definitely does pay off.",
+    author: 'Florida-based Roofing Contractor',
     rating: 5,
   },
 ];
@@ -82,7 +75,7 @@ export default function ReviewSlider() {
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
                 <motion.div
-                  className="bg-gradient-to-br mb-14 from-white to-blue-50 p-6 rounded-2xl shadow-xl flex flex-col items-center text-center transition hover:scale-[1.02] duration-300"
+                  className="bg-gradient-to-br mb-14 min-h-[296px] from-white to-blue-50 p-6 rounded-2xl shadow-xl flex flex-col items-center text-center transition hover:scale-[1.02] duration-300"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -94,7 +87,7 @@ export default function ReviewSlider() {
                     alt="review"
                     className="w-20 h-20 object-cover rounded-full border-4 border-blue-500 mb-4"
                   />
-                  <h4 className="text-gray-700 text-sm italic mb-3">
+                  <h4 className="text-gray-700 italic mb-3">
                     "{review.quote}"
                   </h4>
 

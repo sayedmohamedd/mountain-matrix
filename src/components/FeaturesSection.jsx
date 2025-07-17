@@ -15,7 +15,7 @@ const FeaturesSection = () => {
           <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
             We don’t just generate leads, we help you close more deals
           </h2>
-          <ul className="flex flex-col gap-5 mb-5 pl-3 list-disc list-inside text-gray-600">
+          <ul className="flex flex-col gap-5 mb-5 pl-3 text-lg list-disc list-inside text-gray-600">
             <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

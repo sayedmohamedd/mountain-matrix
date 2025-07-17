@@ -11,7 +11,7 @@ const page = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div className="container text-center text-white relative z-20 h-full flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold my-5 opacity-100">
-            About Mountains Solutions
+            About Mountain Matrix
           </h2>
           <p className="text-xl font-medium">
             Your Growth Partner in Lead Generation, Appointment Setting &
@@ -40,7 +40,7 @@ const page = () => {
 
             <p className="mt-6 mb-3 text-slate-700 text-lg">
               With years of experience in lead generation, telesales, and
-              customer engagement, Mountains Solutions is dedicated to helping
+              customer engagement, Mountain Matrix is dedicated to helping
               businesses:
             </p>
             <ul className="flex flex-col gap-5 mb-5 pl-3  list-disc list-inside text-gray-600">

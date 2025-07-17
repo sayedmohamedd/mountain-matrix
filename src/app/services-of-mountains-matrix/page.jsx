@@ -103,7 +103,7 @@ const page = () => {
           </h3>
           <p className="text-center text-gray-600 text-lg leading-9 mb-20 mt-2">
             Are you tired of spending countless hours handling leads and
-            scheduling appointments? Let Mountains Solutions handle the
+            scheduling appointments? Let Mountain Matrix handle the
             time-consuming task of appointment setting, allowing you to focus on
             what you do best: closing deals
           </p>
@@ -167,7 +167,7 @@ const page = () => {
           </h3>
           <p className="text-center text-gray-600 text-lg leading-9 mb-20 mt-2">
             Are you struggling to attract new customers and grow your business?
-            Mountains Solutions offers comprehensive lead generation services
+            Mountain Matrix offers comprehensive lead generation services
             designed to help you identify, target, and convert qualified
             prospects into paying customers.
           </p>
