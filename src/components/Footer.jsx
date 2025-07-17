@@ -52,28 +52,35 @@ const Footer = () => {
               <CiLocationOn />
               <span>1111B S Governors Ave STE 25844 Dover, DE 19904</span>
             </li>
-            <span className="text-center text-lg font-bold border-b-2 w-fit mx-auto">
+            <span className="text-center text-xl font-bold border-b-2 w-fit mx-auto">
               Follow Us
             </span>
-            <li className="flex justify-center items-center gap-7">
+            <li className="flex justify-center items-center gap-7 text-xl">
               <a
                 href="https://www.facebook.com/mountainssolutions/"
                 target="_blank"
+                className="duration-100 hover:opacity-90 border-2 border-[#0f222e] hover:border-gray-500 rounded-xl p-2 hover:text-gray-600"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="https://www.instagram.com/mountianssolutions/"
                 target="_blank"
+                className="duration-100 hover:opacity-90 border-2 border-[#0f222e] hover:border-gray-500 rounded-xl p-2 hover:text-gray-600"
               >
                 <FaInstagram />
               </a>
-              <a href="https://x.com/MountainsSolns" target="_blank">
+              <a
+                href="https://x.com/MountainsSolns"
+                target="_blank"
+                className="duration-100 hover:opacity-90 border-2 border-[#0f222e] hover:border-gray-500 rounded-xl p-2 hover:text-gray-600"
+              >
                 <FaXTwitter />
               </a>
               <a
                 href="https://www.linkedin.com/company/mountainssolutions/"
                 target="_blank"
+                className="duration-100 hover:opacity-90 border-2 border-[#0f222e] hover:border-gray-500 rounded-xl p-2 hover:text-gray-600"
               >
                 <FaLinkedinIn />
               </a>
