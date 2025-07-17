@@ -1,7 +1,12 @@
-import { Poppins } from 'next/font/google';
-import Nav from '@/components/Nav';
+// Css
 import './globals.css';
+// Fonts
+import { Poppins } from 'next/font/google';
+// Components
+import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+// Toast
+import { Toaster } from 'react-hot-toast';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -10,6 +15,7 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
+// Meta Data
 export const metadata = {
   title: 'Mountain Matrix',
   description:
@@ -43,6 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
+        <Toaster position="top-right" reverseOrder={false} />
         <Nav />
         {children}
         <Footer />

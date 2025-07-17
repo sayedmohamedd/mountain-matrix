@@ -40,7 +40,7 @@ const Nav = () => {
         <div className="container flex items-center justify-between h-24 px-4">
           <Link href="/" className="focus:outline-none">
             <img
-              src="/logo-removebg.png"
+              src="/dark-logo.png"
               alt="mountain-matrix"
               className="w-36 md:w-40 lg:w-36"
             />
@@ -99,7 +99,7 @@ const Nav = () => {
           {/* Mobile Menu Icon */}
           <FaListUl
             onClick={() => setMenuOpen(true)}
-            className="text-[#003049] text-3xl lg:hidden cursor-pointer hover:opacity-80 duration-100"
+            className="text-[#003049] text-[34px] lg:hidden cursor-pointer hover:opacity-80 duration-100"
           />
         </div>
       </nav>
