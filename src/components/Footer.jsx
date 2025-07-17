@@ -15,7 +15,7 @@ const Footer = () => {
             src="./white-logo-croped.png"
             alt="mountain-matrix"
             loading="lazy"
-            className="w-30"
+            className="w-40 md:w-30"
           />
           <p className="text-gray-300 leading-relaxed text-center">
             Mountains Solutions is your trusted partner in business growth. We
