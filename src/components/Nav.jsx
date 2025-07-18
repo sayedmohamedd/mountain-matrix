@@ -33,7 +33,7 @@ const Nav = () => {
     <>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 bg-[#eaeaee] transition-all duration-200 ${
+        className={`fixed py-2 top-0 left-0 w-full z-50 bg-[#eaeaee] transition-all duration-200 ${
           scrolled ? 'translate-y-[-100px]' : ''
         }`}
       >

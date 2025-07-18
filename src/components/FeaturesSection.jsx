@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#eaeaee] py-20">
+    <section className="bg-[#eaeaee] py-20 overflow-hidden">
       <div className="container rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-6 sm:px-12">
         {/* Left Side: Text */}
         <motion.div
