@@ -39,9 +39,15 @@ const InsightsSection = () => {
   };
 
   return (
-    <section className="bg-[#eaeaee] py-20 px-6 overflow-hidden">
+    <section
+      className="bg-[#eaeaee] py-20 px-6 overflow-hidden"
+      // className="bg-[#fdf3f2] py-20 px-6 overflow-hidden"
+    >
       <div className="container mx-auto">
-        <h2 className="text-center text-4xl font-extrabold text-[#003049] mb-16">
+        <h2
+          className="text-center text-4xl font-extrabold text-[#003049] mb-16"
+          // className="text-center text-4xl font-extrabold text-[#2b0200] mb-16"
+        >
           Roofing and Solar Industry Insights
         </h2>
 
@@ -52,8 +58,8 @@ const InsightsSection = () => {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-200 group"
@@ -66,10 +72,13 @@ const InsightsSection = () => {
                   />
                 </div>
                 <div className="p-6 text-left flex flex-col justify-between h-[340px]">
-                  <h3 className="text-lg font-semibold text-[#003049] mb-3">
+                  <h3
+                    className="text-lg font-semibold text-[#003049] mb-3"
+                    // className="text-lg font-semibold text-[#2b0200] mb-3"
+                  >
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 font-medium text-sm transition-all duration-300">
+                  <p className="text-gray-900 font-medium text-sm transition-all duration-300">
                     {isExpanded
                       ? item.description
                       : item.description.slice(0, 100) + '...'}
@@ -77,6 +86,7 @@ const InsightsSection = () => {
                   <button
                     onClick={() => toggleCard(index)}
                     className="mt-4 text-sm font-semibold text-[#003049] hover:underline"
+                    // className="mt-4 text-sm font-semibold text-[#2b0200] hover:underline"
                   >
                     {isExpanded ? 'Read less' : 'Read more'}
                   </button>

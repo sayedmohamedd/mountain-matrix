@@ -7,9 +7,13 @@ import { CiLocationOn, CiMail } from 'react-icons/ci';
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-[#0f222e]" id="contact">
+    <footer
+      className="text-white bg-[#0f222e]"
+      // className="text-white bg-gradient-to-tr from-[#2b0200] to-[#0d0d0d]"
+      // className="text-white bg-gradient-to-tr from-[#2b0200] to-[#080808]"
+      id="contact"
+    >
       <div className="container px-10 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {/* First */}
         <div className="flex flex-col items-center justify-center">
           <img
             src="./white-logo-croped.png"
@@ -25,7 +29,7 @@ const Footer = () => {
             goals efficiently.
           </p>
         </div>
-        {/* Second */}
+
         <div className="flex md:justify-center">
           <div>
             <h3 className="text-xl font-semibold mb-3">Services</h3>
@@ -36,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        {/* Third */}
+
         <div>
           <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
           <ul className="flex flex-col gap-5">
@@ -46,11 +50,11 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-3 text-gray-300">
               <IoCall />
-              <span>(302) 364-6577</span>
+              <span>(214) 216-8334</span>
             </li>
             <li className="flex items-center gap-3 text-gray-300">
               <CiLocationOn />
-              <span>1111B S Governors Ave STE 25844 Dover, DE 19904</span>
+              <span>30 N Gould St Ste R Sheridan WY 82801</span>
             </li>
             <span className="text-center text-xl font-bold border-b-2 w-fit mx-auto">
               Follow Us

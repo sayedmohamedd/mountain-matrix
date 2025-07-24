@@ -24,14 +24,21 @@ export default function StepsSection() {
   ];
 
   return (
-    <div className="py-16 px-4 sm:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900 rounded-lg">
+    <div
+      className="py-16 px-4 sm:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900 rounded-lg"
+      // className="py-16 px-4 sm:px-8 lg:px-16 rounded-lg"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map((step, index) => (
           <div
             key={index}
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300 group"
+            // className="bg-stone-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300 group"
           >
-            <div className="w-12 h-12 mb-4 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition">
+            <div
+              className="w-12 h-12 mb-4 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition"
+              // className="w-12 h-12 mb-4 rounded-full bg-gradient-to-br from-[#fdf3f2] to-[#2b0200] flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition"
+            >
               {index + 1}
             </div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">

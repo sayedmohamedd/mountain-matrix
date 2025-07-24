@@ -1,9 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend('re_8MLB3Zxh_GtuhddGQcQP1aG6SJqQepDCT');
-const img_src = 'http://localhost:3000/logo.jpg';
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {

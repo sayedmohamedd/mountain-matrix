@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#eaeaee] py-20 overflow-hidden">
+    <section
+      className="bg-[#eaeaee] py-20 overflow-hidden"
+      // className="bg-[#fdf3f2] py-20 overflow-hidden"
+    >
       <div className="container rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-6 sm:px-12">
         {/* Left Side: Text */}
         <motion.div
@@ -12,10 +15,13 @@ const FeaturesSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
+          <h2
+            className="text-4xl font-extrabold text-[#003049] mb-5 "
+            // className="text-4xl font-extrabold text-[#2b0200] mb-5 "
+          >
             We don’t just generate leads, we help you close more deals
           </h2>
-          <ul className="flex flex-col gap-5 mb-5 pl-3 text-lg list-disc list-inside text-gray-600">
+          <ul className="flex flex-col gap-5 mb-5 pl-3 text-lg list-disc list-inside text-gray-900">
             <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -63,6 +69,7 @@ const FeaturesSection = () => {
             href="https://calendly.com/mountainssolutions/30min"
             target="_blank"
             className="inline-block overflow-hidden px-6 py-4 text-xl font-semibold rounded-full border text-[#003049] hover:bg-[#003049] hover:text-white transition duration-200"
+            // className="inline-block overflow-hidden px-6 py-4 text-xl font-semibold rounded-full border text-[#2b0200] hover:bg-[#2b0200] hover:text-white transition duration-200"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}

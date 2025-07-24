@@ -19,21 +19,21 @@ const page = () => {
           </p>
         </div>
       </header>
-      <section>
-        <p></p>
-        <p></p>
-        <button>
-          <a></a>
-        </button>
-      </section>
+
       {/* Who We Are */}
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 px-12 py-18">
           <div>
-            <h2 className="text-4xl font-extrabold text-[#003049] mb-5">
+            <h2
+              className="text-4xl font-extrabold text-[#003049] mb-5"
+              // className="text-4xl font-extrabold text-[#2b0200] mb-5"
+            >
               Who We Are
             </h2>
-            <p className="text-slate-700 text-2xl font-medium">
+            <p
+              className="text-slate-600 text-2xl font-medium"
+              // className="text-slate-700 text-2xl font-medium"
+            >
               Driving Business Growth with Data-Driven Lead Generation & Sales
               Solutions
             </p>
@@ -51,11 +51,11 @@ const page = () => {
               <li>Reduce sales cycle time & maximize conversion rates</li>
               <li>Improve customer satisfaction & long-term retention</li>
             </ul>
-            <p className="text-gray-600 mt-8 text-lg">
+            <p className="text-gray-800 mt-8 text-lg">
               We’re not just another lead generation company—we’re your
               strategic growth partner
             </p>
-            <p className="text-gray-600 my-4 text-lg">
+            <p className="text-gray-800 my-4 text-lg">
               Looking to scale your business faster?
             </p>
           </div>
@@ -64,23 +64,27 @@ const page = () => {
           </div>
         </div>
       </section>
+
       {/* our mession */}
       <section className="bg-[#eaeaee]">
         <div className="container p-10">
           <div className="hover:scale-105 hover:-rotate-z-1 duration-150 bg-white md:w-4/5 lg:w-[90%] px-6 md:px-16 py-10 mx-auto rounded-4xl">
-            <h3 className="text-center text-3xl font-extrabold text-[#003049] mb-5">
+            <h3
+              className="text-center text-3xl font-extrabold text-[#003049] mb-5"
+              // className="text-center text-3xl font-extrabold text-[#2b0200] mb-5"
+            >
               Our Mission
             </h3>
-            <p className="text-center text-gray-600 mb-3">
+            <p className="text-center text-gray-800 mb-3">
               Empowering Businesses with Scalable Sales & Lead Generation
               Strategies
             </p>
-            <p className="text-center text-gray-600 mb-3 text-xl">
+            <p className="text-center text-gray-800 mb-3 text-xl">
               “Our mission is simple: help businesses generate more revenue
               through efficient and customized appointment setting and sales
               solutions.”
             </p>
-            <ul className="text-gray-600 my-6 flex flex-col gap-4">
+            <ul className="text-gray-800 my-6 flex flex-col gap-4">
               <li className="text-lg font-medium">We achieve this by:</li>
               <li className="flex items-center gap-3">
                 <IoMdCheckmark />
@@ -109,7 +113,10 @@ const page = () => {
               businesses scale.
             </p>
             <div className="flex justify-center items-center">
-              <button className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100">
+              <button
+                className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100"
+                // className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#2b0200] cursor-pointer hover:opacity-80 duration-100"
+              >
                 <a
                   href="https://calendly.com/mountainssolutions/30min"
                   target="_blank"
@@ -126,10 +133,13 @@ const page = () => {
       <section className="bg-[#eaeaee]">
         <div className="container p-10">
           <div className="hover:scale-105 hover:rotate-z-1 duration-150 bg-white md:w-4/5 lg:w-[90%] px-6 md:px-16 py-10 mx-auto rounded-4xl">
-            <h3 className="text-center text-3xl font-extrabold text-[#003049] mb-5">
+            <h3
+              className="text-center text-3xl font-extrabold text-[#003049] mb-5"
+              // className="text-center text-3xl font-extrabold text-[#2b0200] mb-5"
+            >
               Our Values
             </h3>
-            <ul className="text-gray-600 my-6 flex flex-col gap-4">
+            <ul className="text-gray-800 my-6 flex flex-col gap-4">
               <li className="text-lg font-medium">We achieve this by:</li>
               <li className="flex items-center gap-3">
                 <IoMdCheckmark />
@@ -158,7 +168,10 @@ const page = () => {
               paying customers.
             </p>
             <div className="flex justify-center items-center">
-              <button className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100">
+              <button
+                className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#003049] cursor-pointer hover:opacity-80 duration-100"
+                // className="px-5 py-3 rounded-full text-lg font-medium mt-3 text-white bg-[#2b0200] cursor-pointer hover:opacity-80 duration-100"
+              >
                 <a
                   href="https://calendly.com/mountainssolutions/30min"
                   target="_blank"

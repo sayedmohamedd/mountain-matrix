@@ -53,8 +53,8 @@ export default function ReviewSlider() {
       <div className="container p-10">
         <div className="py-20 px-4 ">
           <h2
-            // className="text-3xl font-bold text-center mb-10 text-gray-800"
-            className="text-center text-3xl font-extrabold text-[#003049] my-10"
+            className="text-4xl font-bold text-center mb-10 text-[#003049]"
+            // className="text-center text-3xl font-extrabold text-[#2b0200] my-10"
           >
             What Our Clients Say
           </h2>
@@ -86,8 +86,9 @@ export default function ReviewSlider() {
                     src={review.image}
                     alt="review"
                     className="w-20 h-20 object-cover rounded-full border-4 border-blue-500 mb-4"
+                    // className="w-20 h-20 object-cover rounded-full border-4 border-[#b9473d] mb-4"
                   />
-                  <h4 className="text-gray-700 italic mb-3">
+                  <h4 className="text-gray-900 italic mb-3">
                     "{review.quote}"
                   </h4>
 
@@ -106,7 +107,10 @@ export default function ReviewSlider() {
                     ))}
                   </div>
 
-                  <p className="text-blue-600 font-semibold">
+                  <p
+                    className="text-blue-600 font-semibold"
+                    // className="text-[#2b0200] font-semibold"
+                  >
                     — {review.author}
                   </p>
                 </motion.div>

@@ -12,20 +12,19 @@ const page = () => {
           <h2 className="text-4xl font-bold my-5 opacity-100">
             Elevate Your Business with Expert Sales & Customer Growth Solutions
           </h2>
-          {/* <p className="text-xl font-medium">
-            Your Growth Partner in Lead Generation, Appointment Setting &
-            Business Success
-          </p> */}
         </div>
       </header>
 
       {/* Our Services */}
       <section>
         <div className="container p-10">
-          <h3 className="text-center font-bold text-4xl my-5 text-[#0f222e]">
+          <h3
+            className="text-center font-bold text-4xl my-5 text-[#003049]"
+            // className="text-center font-bold text-4xl my-5 text-[#2b0200]"
+          >
             Our Services
           </h3>
-          <p className="text-center text-gray-600 mb-16 mt-2">
+          <p className="text-center text-gray-800 mb-16 mt-2">
             Boost Sales, Drive Conversions & Improve Customer Retention
           </p>
           {/* three services */}
@@ -98,10 +97,13 @@ const page = () => {
       {/* Steps */}
       <section>
         <div className="container p-10">
-          <h3 className="text-center font-bold text-4xl my-5 text-[#0f222e]">
+          <h3
+            className="text-center font-bold text-4xl my-5 text-[#0f222e]"
+            // className="text-center font-bold text-4xl my-5 text-[#2b0200]"
+          >
             How do Our Appointment Setting Services Work?
           </h3>
-          <p className="text-center text-gray-600 text-lg leading-9 mb-20 mt-2">
+          <p className="text-center text-gray-800 text-lg leading-9 mb-20 mt-2">
             Are you tired of spending countless hours handling leads and
             scheduling appointments? Let Mountain Matrix handle the
             time-consuming task of appointment setting, allowing you to focus on

@@ -41,14 +41,18 @@ const Nav = () => {
           <Link href="/" className="focus:outline-none">
             <img
               src="/dark-logo.png"
+              // src="/original-logo.png"
               alt="mountain-matrix"
-              className="w-36 md:w-40 lg:w-36"
+              className="w-36 md:w-40 lg:w-36 bg-primary"
             />
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex gap-8 items-center">
-            <ul className="flex gap-10 text-lg font-semibold text-[#003049] focus:outline-none">
+            <ul
+              className="flex gap-10 text-xl font-semibold focus:outline-none text-[#003049]"
+              // style={{ color: '--var-primary' }}
+            >
               <li className={`${pathname === '/' ? 'opacity-30' : ''}`}>
                 <Link href="/" className="hover:opacity-80">
                   Home
@@ -85,7 +89,11 @@ const Nav = () => {
                 </a>
               </li>
             </ul>
-            <button className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer border text-[#003049] hover:bg-[#003049] hover:text-white transition">
+            <button
+              className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer border border-[#003049] text-[#003049] hover:bg-[#003049] hover:text-white transition"
+              // className="overflow-hidden px-6 py-4 text-xl font-semibold rounded-full cursor-pointer border hover:bg-[#2b0200] hover:text-white transition"
+              // style={{ color: '--var-primary' }}
+            >
               <a
                 href="https://calendly.com/mountainssolutions/30min"
                 target="_blank"
@@ -99,7 +107,8 @@ const Nav = () => {
           {/* Mobile Menu Icon */}
           <FaListUl
             onClick={() => setMenuOpen(true)}
-            className="text-[#003049] text-[34px] lg:hidden cursor-pointer hover:opacity-80 duration-100"
+            className="text-[34px] lg:hidden cursor-pointer hover:opacity-80 duration-100 text-[#003049]"
+            // style={{ color: '--var-primary' }}
           />
         </div>
       </nav>
@@ -118,14 +127,22 @@ const Nav = () => {
         }`}
       >
         <div className="flex justify-between items-center">
-          <img src="/dark-logo.png" className="w-32" alt="Mountain Matrix" />
+          <img
+            src="/dark-logo.png"
+            // src="/original-logo.png"
+            className="w-32"
+            alt="Mountain Matrix"
+          />
           <IoClose
             className="text-3xl text-[#003049] cursor-pointer hover:opacity-70"
             onClick={() => setMenuOpen(false)}
           />
         </div>
 
-        <ul className="flex flex-col gap-5 text-[#003049] font-semibold text-lg">
+        <ul
+          // className="flex flex-col gap-5 text-[#2b0200] font-semibold text-lg"
+          className="flex flex-col gap-5 text-[#003049] font-semibold text-lg"
+        >
           <li>
             <Link
               href="/"
@@ -166,7 +183,8 @@ const Nav = () => {
         <a
           href="https://calendly.com/mountainssolutions/30min"
           target="_blank"
-          className="mt-6 inline-block w-full text-center px-4 py-3 bg-[#003049] text-white rounded-full font-semibold hover:bg-[#001f33] transition"
+          // className="mt-6 inline-block w-full text-center px-4 py-3 bg-[#2b0200] text-white rounded-full font-semibold hover:bg-[#2b0200a2] transition"
+          className="mt-6 inline-block w-full text-center px-4 py-3 bg-[#003049] text-white rounded-full font-semibold hover:bg-[#003049] transition"
         >
           Book appointment
         </a>
