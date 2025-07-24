@@ -10,7 +10,7 @@
   <a href="https://github.com/sayedmuhammed74/mountain-matrix" target="_blank">🔗 GitHub Repo</a> • 
   <a href="#-features">⚙️ Features</a> • 
   <a href="#-getting-started">🚀 Getting Started</a> • 
-  <!-- <a href="#-project-structure">📁 Project Structure</a> -->
+  <a href="#-project-structure">📁 Project Structure</a>
 </p>
 
 ---
@@ -29,6 +29,21 @@
 ✅ Ready for production – deploy on Vercel with one click
 
 ---
+
+## 📁 Project Structure
+
+mountain-matrix/
+├── public/ # Static assets (favicon, logo, images)
+├── src/
+│ ├── app/ # App Router directory
+│ │ └── layout.js # Global layout with nav, footer, fonts, metadata
+│ │ └── page.js # Home page, renders all sections
+│ ├── components/ # All UI components (Header, FeaturesSection, Nav, Footer, etc.)
+│ └── lib/ # Utilities & shared logic (optional)
+├── tailwind.config.js # Custom Tailwind theme
+├── postcss.config.mjs # PostCSS plugins
+├── eslint.config.mjs # ESLint rules for clean code
+├── package.json # Scripts & dependencies
 
 ## 🚀 Getting Started
 
