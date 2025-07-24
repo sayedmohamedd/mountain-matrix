@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://mountain-matrix-s.vercel.app" target="_blank">🌐 Live Site</a> • 
+  <a href="https://mountains-matrix-s.vercel.app" target="_blank">🌐 Live Site</a> • 
   <a href="https://github.com/sayedmuhammed74/mountain-matrix" target="_blank">🔗 GitHub Repo</a> • 
   <a href="#-features">⚙️ Features</a> • 
   <a href="#-getting-started">🚀 Getting Started</a> • 
