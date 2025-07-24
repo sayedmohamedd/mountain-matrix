@@ -6,11 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="https://mountain-matrix.com" target="_blank">🌐 Live Site</a> • 
+  <a href="https://mountain-matrix-s.vercel.app" target="_blank">🌐 Live Site</a> • 
   <a href="https://github.com/sayedmuhammed74/mountain-matrix" target="_blank">🔗 GitHub Repo</a> • 
   <a href="#-features">⚙️ Features</a> • 
   <a href="#-getting-started">🚀 Getting Started</a> • 
-  <a href="#-project-structure">📁 Project Structure</a>
+  <!-- <a href="#-project-structure">📁 Project Structure</a> -->
 </p>
 
 ---
@@ -26,7 +26,7 @@
 ✅ Uses **Poppins** font from Google Fonts  
 ✅ Fully responsive + SEO metadata added  
 ✅ Clean reusable structure with modular components  
-✅ Ready for production – deploy on Vercel with one click  
+✅ Ready for production – deploy on Vercel with one click
 
 ---
 
@@ -39,3 +39,4 @@ git clone https://github.com/sayedmuhammed74/mountain-matrix.git
 cd mountain-matrix
 npm install
 npm run dev
+```
