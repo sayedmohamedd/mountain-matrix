@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { toast } from 'react-hot-toast';
+// import { toast } from 'react-hot-toast';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -16,23 +16,21 @@ export default function ContactPage() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await res.json();
-    setLoading(false);
-    if (res.ok) {
-      toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
-    } else {
-      toast.error(data.error || 'Something went wrong.');
-    }
+    // e.preventDefault();
+    // setLoading(true);
+    // const res = await fetch('/api/contact', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify(formData),
+    // });
+    // const data = await res.json();
+    // setLoading(false);
+    // if (res.ok) {
+    //   toast.success('Message sent successfully!');
+    //   setFormData({ name: '', email: '', message: '' });
+    // } else {
+    //   toast.error(data.error || 'Something went wrong.');
+    // }
   };
 
   return (

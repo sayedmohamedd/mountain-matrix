@@ -16,34 +16,34 @@ const poppins = Poppins({
 });
 
 // Meta Data
-export const metadata = {
-  title: 'Mountain Matrix',
-  description:
-    'Mountain Matrix: Your Trusted Partner in Lead Generation & Sales Growth',
-  icons: {
-    icon: '/favicon.png',
-  },
-  keywords: ['Mountain Matrix', 'Mountains Solutions'],
-  authors: [
-    { name: 'Mountain Matrix', url: 'https://www.mountain-matrix.com' },
-  ],
-  creator: 'Mountain Matrix',
-  openGraph: {
-    title: 'Mountain Matrix  | https://www.facebook.com/mountainssolutions/',
-    description: '',
-    url: 'https://mountain-matrix.com',
-    siteName: 'Mountain Matrix',
+// export const metadata = {
+//   title: 'Mountain Matrix',
+//   description:
+//     'Mountain Matrix: Your Trusted Partner in Lead Generation & Sales Growth',
+//   icons: {
+//     icon: '/favicon.png',
+//   },
+//   keywords: ['Mountain Matrix', 'Mountains Solutions'],
+//   authors: [
+//     { name: 'Mountain Matrix', url: 'https://www.mountain-matrix.com' },
+//   ],
+//   creator: 'Mountain Matrix',
+//   openGraph: {
+//     title: 'Mountain Matrix  | https://www.facebook.com/mountainssolutions/',
+//     description: '',
+//     url: 'https://mountain-matrix.com',
+//     siteName: 'Mountain Matrix',
 
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    title: 'Mountain Matrix',
-    description:
-      'Mountain Matrix: Your Trusted Partner in Lead Generation & Sales Growth',
-    images: ['/logo.jpg'],
-  },
-};
+//     locale: 'en_US',
+//     type: 'website',
+//   },
+//   twitter: {
+//     title: 'Mountain Matrix',
+//     description:
+//       'Mountain Matrix: Your Trusted Partner in Lead Generation & Sales Growth',
+//     images: ['/logo.jpg'],
+//   },
+// };
 
 export default function RootLayout({ children }) {
   return (
